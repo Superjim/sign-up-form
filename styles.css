@@ -99,6 +99,7 @@ form {
 }
 
 .form-input {
+    font-family: Arial, Helvetica, Verdana, Geneva, Tahoma, sans-serif;
     border: 1px solid grey;
     font-size: 1rem;
     color: grey;
@@ -119,6 +120,7 @@ form {
     opacity: 0;
     visibility: hidden;
 }
+
 
 .input {
     font-family: Arial, Helvetica, Verdana, Geneva, Tahoma, sans-serif;
@@ -143,6 +145,11 @@ form {
     text-decoration: none;
 }
 
+#error-message {
+    font-family: Arial, Helvetica, Verdana, Geneva, Tahoma, sans-serif;
+    color: red;
+}
+
 .btn {
   background-image: linear-gradient(-180deg, #37AEE2 0%, #1E96C8 100%);
   border-radius: .5rem;
@@ -153,7 +160,7 @@ form {
   justify-content: center;
   padding: 1rem 1.75rem;
   text-decoration: none;
-  width: 40%;
+  width: 250px;
   border: 0;
   cursor: pointer;
   user-select: none;

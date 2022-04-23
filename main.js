@@ -4,19 +4,31 @@ const email = document.querySelector("#email")
 const phone = document.querySelector("#phone-number")
 const password = document.querySelector("#password")
 const confirmPassword = document.querySelector("#confirm-password")
-const errorMessage = document.querySelector(".error-message")
+const errorMessage = document.querySelector("#error-message")
+const form = document.querySelector(".form")
 
-const inputArray = [email, phone, password, confirmPassword]
+form.addEventListener("submit", (e) => {
+    let messages = []
 
-inputArray.forEach((item) => {
-    item.addEventListener("focusin", () => {
-      errorMessage.textContent = "";
-      item.classList.remove("error");
-      if (item == password || item == confirmPassword) {
-        password.classList.remove("error");
-        confirmPassword.classList.remove("error");
-      }
-    });
-  });
+    //redundant as form is set to "required", i just wanted to test this
+    if (firstName.value === "" || firstName.value === null) {
+        messages.push("First name is required")
+    }
 
-  
+    if (password.value.length < 8  || password.value.length > 20) {
+        messages.push("Password must be between 8 and 20 characters")
+    }
+
+    if (password != confirmPassword) {
+        messages.push("Passwords must match")
+
+    }
+
+    if (messages != null) {
+        e.preventDefault()
+        errorMessage.innerHTML = "Error: " + messages.join(", ")
+
+    }
+    
+ 
+})
