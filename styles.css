@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+
+body {
+    font-family: 'Special Elite', cursive;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: row;
+    overflow: hidden;
+    background-color: aliceblue;
+
+}
+
+h1 {
+    font-size: 1.5rem;
+}
+
+h2 {
+    font-size: 1.2rem;
+}
+
+.img {
+    display: flex;
+    width: 40%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    background: url(/images/keith-tanner-T4O-Ub4sE48-unsplash.jpg) no-repeat;
+    background-size: cover;
+    justify-content: center;   
+
+}
+
+.img-info {
+    color: white;
+    margin-top: auto; 
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    text-shadow: 3px 3px 3px #000000;
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+}
+
+.img-logo img {
+    display: flex;
+    flex-direction: row;
+    background: #000000; 
+/*    opacity: 50%;
+*/
+}
+
+a {
+    color: inherit;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 60%;
+    margin: 0;
+    padding: 0px;
+}
+
+.form > * {
+    padding-left: 5%;
+    padding-right: 5%;
+    
+}
+
+form {
+    background-color: white;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 5px 5px 5px 5px grey;
+
+}
+
+.form-label {
+    font-size: 1rem;
+    display: block;
+    transition: all 0.5s;
+    transform: translateY(-3rem);
+    
+}
+
+.form-input {
+    border: 1px solid grey;
+    font-size: 1rem;
+    color: grey;
+    padding: 0.25rem 0.25rem;
+    border-radius: 0.5rem;
+    display: block;
+    transition: all 0.5s;
+    
+}
+
+.form-input:focus {
+    transition: 0.5s;
+    outline: none;
+    border: 1px solid blue;
+}
+
+.form-input:placeholder-shown + .form-label {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.input {
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    flex-direction: column;
+}
+
+.first-and-lastname, .password-fields {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 1rem;
+
+}
+
+.password-fields {
+    gap: 1rem;
+}
+
+.login {
+    color: #17759C;
+    text-decoration: none;
+}
+
+.form-bottom {
+
+}
+
+.btn {
+  background-image: linear-gradient(-180deg, #37AEE2 0%, #1E96C8 100%);
+  border-radius: .5rem;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  display: flex;
+  font-size: 16px;
+  justify-content: center;
+  padding: 1rem 1.75rem;
+  text-decoration: none;
+  width: 40%;
+  border: 0;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  box-shadow: 5px 5px 5px 5px grey;
+  transition: all 0.5s;
+}
+
+.btn:hover {
+  background-image: linear-gradient(-180deg, #1D95C9 0%, #17759C 100%);
+  transition: all 0.5s;  
+  box-shadow: 5px 5px 5px 5px rgb(52,52,52);
+}
