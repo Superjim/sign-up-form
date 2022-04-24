@@ -19,14 +19,14 @@ form.addEventListener("submit", (e) => {
         messages.push("Password must be between 8 and 20 characters")
     }
 
-    if (password != confirmPassword) {
+    if (password.value !== confirmPassword.value) {
         messages.push("Passwords must match")
 
     }
 
     if (messages != null) {
         e.preventDefault()
-        errorMessage.innerHTML = "Error: " + messages.join(", ")
+        errorMessage.innerHTML = messages.join(", ")
 
     }
     
